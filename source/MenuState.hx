@@ -18,6 +18,7 @@ class MenuState extends FlxState
 	override public function create():Void
 	{
 		super.create();
+		add(new FlxText(0,200,800,"it works MR David").setFormat(null,30, 0xffffff,"center"));
 	}
 	
 	/**
