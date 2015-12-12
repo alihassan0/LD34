@@ -18,7 +18,12 @@ class MenuState extends FlxState
 	override public function create():Void
 	{
 		super.create();
-		add(new FlxText(0,200,800,"it works MR David David David ").setFormat(null,30, 0xffffff,"left"));
+		FlxG.camera.antialiasing = true;
+		
+		add(new FlxSprite(0,0,"assets/images/bg.png"));
+		add(new Player(200,100));
+		add(new Cop(300,400));
+		//add(new FlxText(0,200,800,"it works MR David David David ").setFormat(null,30, 0xffffff,"left"));
 	}
 	
 	/**
